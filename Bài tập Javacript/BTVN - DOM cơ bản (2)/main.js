@@ -13,7 +13,7 @@ let colors = [
 4. Khi bấm vào box bất kỳ thì box đó biến mất, đồng thời số lượng total box giảm đi 1
 5. Khi click vào nút “more box” thì số lượng box tăng lên 5 (tương ứng với 5 màu trong mảng colors), đồng thời số lượng total box cũng tăng lên 5/*/
 let totalBoxes = 0;
-
+// Hàm tạo box
 function createBox(color) {
     let box = document.createElement('div');
     box.classList.add('box');
@@ -25,20 +25,16 @@ function createBox(color) {
     });
     return box;
 }
-
-
+//Hàm cập nhật số box
 function updateStotalBox(value) {
     totalBoxes += value;
     document.querySelector('.points').textContent = totalBoxes;
 }
-
-
+//Hàm thêm box
 function createBoxes(num) {
-    let boxesContainer = document.querySelector('.boxes');
     for (let i = 0; i < num; i++) {
-        let colorIndex = i % colors.length;
-        let box = createBox(colors[colorIndex]);
-        boxesContainer.appendChild(box);
+        let box = createBox(colors[i]);
+        document.querySelector('.boxes').appendChild(box);
         updateStotalBox(1);
     }
 }
@@ -47,5 +43,5 @@ document.getElementById('btn').addEventListener('click', function () {
     createBoxes(5);
 });
 
-// Initial creation of 5 boxes
+
 createBoxes(5);
