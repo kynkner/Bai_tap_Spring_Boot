@@ -3,7 +3,9 @@ package vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.model.Person;
+import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.utils.IFileReader;
 
 import java.util.List;
 

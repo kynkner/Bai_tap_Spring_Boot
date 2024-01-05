@@ -1,5 +1,6 @@
 package vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.dao;
 
+import org.springframework.stereotype.Repository;
 import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.Data.PersonData;
 import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.model.Person;
 
@@ -8,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+@Repository
 public class Personlmpl implements PersonDao{
 
     @Override

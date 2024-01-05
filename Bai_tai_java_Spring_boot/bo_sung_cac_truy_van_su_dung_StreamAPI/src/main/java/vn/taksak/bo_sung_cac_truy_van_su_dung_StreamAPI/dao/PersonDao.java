@@ -1,10 +1,12 @@
 package vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.dao;
 
+import org.springframework.context.annotation.Primary;
 import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.model.Person;
 
 import java.util.List;
 import java.util.Map;
 
+@Primary
 public interface PersonDao {
     void printListPeople(List<Person> persons);
 

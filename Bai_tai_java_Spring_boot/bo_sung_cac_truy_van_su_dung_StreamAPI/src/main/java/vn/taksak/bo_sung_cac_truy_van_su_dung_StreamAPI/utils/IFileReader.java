@@ -1,4 +1,4 @@
-package vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.Data;
+package vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.utils;
 
 import vn.taksak.bo_sung_cac_truy_van_su_dung_StreamAPI.model.Person;
 
