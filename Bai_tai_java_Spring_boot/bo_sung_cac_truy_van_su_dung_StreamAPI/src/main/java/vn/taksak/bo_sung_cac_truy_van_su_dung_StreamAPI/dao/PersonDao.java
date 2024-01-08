@@ -64,9 +64,5 @@ public interface PersonDao {
     List<Person> top5HighestPaid();
 
     List<Person> inAgeRange(int start, int end);
-  /*
-  Pharmacist  - 2
-  Data Coordiator - 3
-  Sales Representative - 5
-  */
+
 }

@@ -15,93 +15,94 @@ import java.util.Map;
 @Service
 public class PersonServer {
     @Autowired
-    private PersonDao personDao;
+    private PersonDao personDAO;
 
     public void printListPeople() {
-        personDao.printListPeople(PersonData.personList);
+        personDAO.printListPeople(PersonData.personList);
     }
 
     public List<Person> getAll() {
-        return personDao.getAll();
+
+        return personDAO.getAll();
     }
 
     public List<Person> sortPeopleByFullName() {
-        return personDao.sortPeopleByFullName();
+        return personDAO.sortPeopleByFullName();
     }
 
     public List<Person> sortPeopleByFullNameReversed() {
-        return personDao.sortPeopleByFullNameReversed();
+        return personDAO.sortPeopleByFullNameReversed();
     }
 
     public List<String> getSortedJobs() {
-        return personDao.getSortedJobs();
+        return personDAO.getSortedJobs();
     }
 
     public List<String> getSortedCities() {
-        return personDao.getSortedCities();
+        return personDAO.getSortedCities();
     }
 
     public List<String> femaleNames() {
-        return personDao.femaleNames();
+        return personDAO.femaleNames();
     }
 
     public Person highestEarner() {
-        return personDao.highestEarner();
+        return personDAO.highestEarner();
     }
 
     public List<Person> bornAfter1990() {
-        return personDao.bornAfter1990();
+        return personDAO.bornAfter1990();
     }
 
     public double averageSalary() {
-        return personDao.averageSalary();
+        return personDAO.averageSalary();
     }
 
     public double averageAge() {
-        return personDao.averageAge();
+        return personDAO.averageAge();
     }
 
     public List<Person> nameContains(String keyword) {
-        return personDao.nameContains(keyword);
+        return personDAO.nameContains(keyword);
     }
 
     public List<Person> sortedByAgeForMale() {
-        return personDao.sortedByAgeForMale();
+        return personDAO.sortedByAgeForMale();
     }
 
     public Person longestName() {
-        return personDao.longestName();
+        return personDAO.longestName();
     }
 
     public List<Person> aboveAverageSalary() {
-        return personDao.aboveAverageSalary();
+        return personDAO.aboveAverageSalary();
     }
 
     public Map<String, List<Person>> groupPeopleByCity() {
-        return personDao.groupPeopleByCity();
+        return personDAO.groupPeopleByCity();
     }
 
     public Map<String, Long> groupJobByCount() {
-        return personDao.groupJobByCount();
+        return personDAO.groupJobByCount();
     }
 
     public List<Person> inSalaryRange(int start, int end) {
-        return personDao.inSalaryRange(start, end);
+        return personDAO.inSalaryRange(start, end);
     }
 
     public List<Person> startsWith(String prefix) {
-        return personDao.startsWith(prefix);
+        return personDAO.startsWith(prefix);
     }
 
     public List<Person> sortByBirthYearDescending() {
-        return personDao.sortByBirthYearDescending();
+        return personDAO.sortByBirthYearDescending();
     }
 
     public List<Person> top5HighestPaid() {
-        return personDao.top5HighestPaid();
+        return personDAO.top5HighestPaid();
     }
 
     public List<Person> inAgeRange(int start, int end) {
-        return personDao.inAgeRange(start, end);
+        return personDAO.inAgeRange(start, end);
     }
 }

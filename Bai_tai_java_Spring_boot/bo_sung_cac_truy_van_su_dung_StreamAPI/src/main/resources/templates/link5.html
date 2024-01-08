@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style5.css}">
+
+</head>
+<body>
+<div th:each="entry : ${mapPeopleByCity}">
+    <h3 th:text="${entry.key}"></h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>fullname</th>
+            <th>job</th>
+            <th>gender</th>
+            <th>city</th>
+            <th>salary</th>
+            <th>birthday</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="person : ${entry.value}">
+            <td th:text="${person.id}">1</td>
+            <td th:text="${person.fullName}">nam</td>
+            <td th:text="${person.job}">hs</td>
+            <td th:text="${person.gender}">nam</td>
+            <td th:text="${person.city}">Hn</td>
+            <td th:text="${person.salary}">100</td>
+            <td th:text="${person.birthday}">2002/10/24</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

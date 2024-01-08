@@ -34,12 +34,12 @@ public class Personlmpl implements PersonDao{
 
     @Override
     public List<String> getSortedJobs() {
-        return PersonData.personList.stream().map(person -> person.getJob()).sorted().collect(Collectors.toList());
+        return PersonData.personList.stream().map(person -> person.getJob()).distinct().sorted().collect(Collectors.toList());
     }
 
     @Override
     public List<String> getSortedCities() {
-        return PersonData.personList.stream().map(person -> person.getCity()).sorted().collect(Collectors.toList());
+        return PersonData.personList.stream().map(person -> person.getCity()).distinct().sorted().collect(Collectors.toList());
     }
 
     @Override

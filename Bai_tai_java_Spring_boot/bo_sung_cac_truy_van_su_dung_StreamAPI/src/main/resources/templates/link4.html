@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style4.css}">
+
+</head>
+<body>
+<h3>Danh sách tất cả thành phố đã được sắp xếp từ A-Z</h3>
+
+    <ul th:each="city : ${cities}">
+    <li th:text="${city}">City</li>
+</ul>
+</body>
+</html>

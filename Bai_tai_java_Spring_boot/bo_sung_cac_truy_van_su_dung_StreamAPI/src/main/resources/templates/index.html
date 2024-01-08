@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+   
+</head>
+<body>
+<h1 class="tieude">Bài tập Thymeleaf cơ bản</h1>
+
+<ul class="layer1">
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/getAll}">Liệt kê danh sách tất cả người</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/sortPeopleByFullName}">Liệt kê danh sách sắp xếp theo tên full name từ A-Z</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/getSortedJobs}">Liệt kê danh sách tất cả nghề nghiệp đã được sắp xếp từ A-Z</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/getSortedCities}">Liệt kê danh sách tất cả thành phố đã được sắp xếp từ A-Z</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/groupPeopleByCity}">Liệt kê các thành phố và danh sách người đang sống ở thành phố đó</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/groupJobByCount}">Liệt kê danh sách nghề nghiệp và số người làm nghề đó</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/aboveAverageSalary}">Liệt kê danh sách người có mức lương lớn hơn mức lương trung bình</a>
+    </li>
+    <li>
+        <i class="fa-solid fa-heart"></i>
+        <a th:href="@{/longestName}">Hiển thị người có độ dài tên dài nhất</a>
+    </li>
+</ul>
+
+<h4>Yêu cầu:</h4>
+<p>Dựa vào Lab : Sử dụng thymeleaf để hiển thị danh sách people. Học viên bổ sung 1 số trang html để hiển thị dữ liệu theo yêu cầu sau</p>
+<ul class ='layer2'>
+    <li>Liệt kê các thành phố và danh sách người đang sống ở thành phố đó -> <span>http://localhost:8080/groupPeopleByCity</span></li>
+    <li>Liệt kê danh sách nghề nghiệp và số người làm nghề đó -> <span>http://localhost:8080/groupJobByCount</span></li>
+    <li>Liệt kê danh sách người có mức lương lớn hơn mức lương trung bình -> <span>http://localhost:8080/aboveAverageSalary</span></li>
+    <li>Hiển thị người có độ dài tên dài nhất -> <span>http://localhost:8080/longestName</span></li>
+</ul>
+<p>Với mỗi link hãy tạo view Thymeleaf để hiện thị dữ liệu sao cho dễ đọc, dễ hiểu.</p>
+<script th:src="@{/main.js}"></script>
+</body>
+</html>

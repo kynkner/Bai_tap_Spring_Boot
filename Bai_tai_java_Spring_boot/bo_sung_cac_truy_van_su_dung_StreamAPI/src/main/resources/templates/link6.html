@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style6.css}">
+
+</head>
+<body>
+<h3>Danh sách nghề nghiệp và số người làm nghề đó</h3>
+
+<div >
+    <table>
+        <thead>
+        <tr>
+            <th>job</th>
+            <th>count</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="entry : ${mapJobByCount}">
+            <td th:text="${entry.key}">1</td>
+            <td th:text="${entry.value}">nam</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

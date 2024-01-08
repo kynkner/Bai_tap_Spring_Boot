@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color:red;
+    font-size: 40px;
+}
+.layer1 li{
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+p, .layer2 li{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 25px;
+}
+span{
+    color: red;
+}
